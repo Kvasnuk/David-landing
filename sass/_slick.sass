@@ -1,0 +1,148 @@
+.slick-slider
+  position: relative   
+  display: block   
+  box-sizing: border-box
+  padding-top: 15px
+  -webkit-touch-callout: none   
+  -webkit-user-select: none   
+  -khtml-user-select: none   
+  -moz-user-select: none   
+  -ms-user-select: none   
+  user-select: none   
+  -ms-touch-action: pan-y   
+  touch-action: pan-y   
+  -webkit-tap-highlight-color: transparent   
+  
+.slick-list  
+  position: relative   
+  overflow: hidden   
+  display: block   
+  margin: 0   
+  padding: 0   
+
+  &:focus  
+    outline: none   
+  
+
+  &.dragging  
+    cursor: pointer   
+    cursor: hand   
+  
+  
+.slick-slider .slick-track,
+.slick-slider .slick-list  
+  -webkit-transform: translate3d(0, 0, 0)   
+  -moz-transform: translate3d(0, 0, 0)   
+  -ms-transform: translate3d(0, 0, 0)   
+  -o-transform: translate3d(0, 0, 0)   
+  transform: translate3d(0, 0, 0)   
+  
+
+.slick-track  
+  position: relative   
+  left: 0   
+  top: 0   
+  display: block   
+
+  &:before,
+  &:after  
+    content: ""   
+    display: table   
+  
+
+  &:after  
+    clear: both   
+  
+
+  .slick-loading &  
+    visibility: hidden   
+  
+  
+.slick-slide
+  display: none
+  float: left
+  height: 100%   
+  min-height: 1px   
+  [dir="rtl"] &  
+    float: right   
+  
+  img  
+    display: block   
+  
+  &.slick-loading img  
+    display: none   
+  
+
+
+
+  &.dragging img  
+    pointer-events: none   
+  
+
+  .slick-initialized &  
+    display: block   
+  
+
+  .slick-loading 
+    visibility: hidden   
+  
+
+  .slick-vertical 
+    display: block   
+    height: auto   
+    border: 1px solid transparent   
+  
+  
+.slick-arrow.slick-hidden  
+  display: none   
+
+.slick-arrow
+  position: absolute
+  top: 50%
+  margin-top: -20px
+  border: none
+  background-color: #ffffff
+  z-index: 2
+  width: 66px
+  height: 66px
+  border: 2px solid #63b945
+  border-radius: 50%
+  font-size: 0
+  outline: none
+  background-repeat: no-repeat
+  background-position: center
+  +tr(0.25s)
+  &:hover
+    border-color: rgb(124, 232, 87)
+    background-color: rgba(157, 211, 139, 0.08)
+
+
+.slick-prev
+  left: -104px
+  background-image: url(../img/icons/ic-back.svg)
+
+.slick-next
+  right: -96px
+  background-image: url(../img/icons/ic-next.svg)
+
+.slick-dots
+  position: absolute
+  width: 100%
+  bottom: 20px
+  text-align: center
+  z-index: 3
+  & li
+    display: inline-block
+    margin: 0 3px
+    &.slick-active button
+      background: #ffffff
+
+    & button
+      width: 15px
+      height: 15px
+      border: 1px solid #ffffff
+      border-radius: 50%
+      background: transparent
+      font-size: 0
+
+
